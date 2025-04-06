@@ -1,0 +1,63 @@
+/* Style to navigation bar */
+
+/* Nav bar - left */
+#navbar-left #search-mobile {
+    padding: 7px 5px ;
+}
+
+#navbar-left #search-mobile .nav-link {
+    background-color: #eee;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#navbar-left input {
+    border-radius: 24px;
+    padding-left: 40px;
+    height: 40px;
+    background-color: #eee;
+}
+
+#navbar-left #search-xl {
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+
+/* Nav bar - center */
+#navbar-center .nav-item {
+    padding: 7px 20px ;
+}
+
+#navbar-center i {
+    color: #ccc;
+}
+
+#navbar-center .nav-item:nth-child(4) {
+    margin-top: 14px;
+}
+
+#navbar-center .nav-item:nth-child(5) {
+    margin-top: 18px;
+}
+
+#navbar-center .nav-item-active {
+    border-bottom: 3px solid blue;
+}
+
+#navbar-center .nav-item-active i {
+    color: blue;
+}
+
+/* Nav bar - right */
+#navbar-right .nav-item {
+    padding: 7px 5px ;
+}
+
+#navbar-right .nav-link {
+    background-color: #eee;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
