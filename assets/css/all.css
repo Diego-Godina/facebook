@@ -1,5 +1,10 @@
 /* Style for all pages */
 
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .sub-title-1 {
     font-weight: 700;
     color: #222;
