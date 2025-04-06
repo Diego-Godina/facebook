@@ -1,0 +1,19 @@
+/* Style to main page */
+
+#main {
+    padding-top: 8px;
+}
+
+/* aside - left */
+
+
+/* section - center */
+
+/* aside - right */
+#aside-right .group-chats .nav-link {
+    background-color: #eee;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
