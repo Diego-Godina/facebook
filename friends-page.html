@@ -6,13 +6,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
-    <title>Frieds</title>
+    <title>Facebook</title>
 </head>
 
 <style>
     .d-flex{
-        background-color: blueviolet;
     }
+
+    .lista-amigos{
+        background-color: blueviolet;
+        padding-left: 10px;
+        margin-right: 1000px;
+        font-size: 30px;
+    }
+
+    li {
+        margin: 15px 0;
+    }
+
 </style>
 
 <body>
@@ -88,15 +99,26 @@
 
 <div class="d-flex">
     <!-- Left aside -->
-    <aside class="d-none d-xl-block container-fluid">
-        <h1>teste aside left</h1>
+    <aside class="d-none d-xl-block container-fluid lista-amigos">
+        <ul>
+            <li> <i class="bi bi-people-fill"></i> Home </li>
+            <li> <i class="bi bi-person-raised-hand"></i> Friend Requests </li>
+            <li> <i class="bi bi-person-fill-add"></i> Suggestions </li>
+            <li> <i class="bi bi-person-lines-fill"></i> All Friends </li>
+            <li> <i class="bi bi-gift"></i> Birthdays </li>
+            <li> <i class="bi bi-person-lines-fill"></i> Costum Lists </li>
+        </ul>
     </aside>
 
     <!-- Center section -->
     <section class="container-fluid">
-        <h1>teste section</h1>
+        <div class="friend-requests">
+            <h1>Friend Requests</h1>
+        </div>
+        <div class="Recomended">
+            <h1>People You may know</h1>
+        </div>
     </section>
-
 
 </div>
 </body>
