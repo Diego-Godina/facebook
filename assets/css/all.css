@@ -1,8 +1,11 @@
 /* Style for all pages */
-
 body {
     max-width: 1920px;
     margin: 0 auto;
+}
+
+#main {
+    height: 100vh;
 }
 
 .sub-title-1 {
@@ -11,6 +14,17 @@ body {
 }
 
 .sub-title-2 {
-    font-weight: 700;
-    color: #aaa;
+    font-weight: 600;
+    color: #888;
+}
+
+.sub-title-3 {
+    font-weight: 400;
+    color: #888;
+}
+
+.inputs {
+    border-radius: 24px;
+    background-color: #eee;
+    height: 40px;
 }

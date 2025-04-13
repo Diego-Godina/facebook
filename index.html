@@ -13,7 +13,7 @@
 
     <title>Facebook</title>
 </head>
-<body class="bg-white">
+<body>
     <!-- Navs bar -->
     <div class="container-fluid d-inline-flex justify-content-between p-0 bg-white">
         <!-- Nav bar - left -->
@@ -35,7 +35,7 @@
                     <a id="search-xl" class="nav-link" href="#">
                         <i class="bi bi-search"></i>
                     </a>
-                    <input class="form-control me-2" type="text" placeholder="Pesquisar no facebook">
+                    <input class="form-control me-2 inputs" type="text" placeholder="Pesquisar no facebook">
                 </form>
             </div>
         </nav>
@@ -96,7 +96,7 @@
     </div>
     <!-- Navs bar -->
 
-    <div id="main" class="d-flex bg-light">
+    <div id="main" class="d-flex">
         <!-- Left aside -->
         <aside id="aside-left" class="d-none d-xl-block container-fluid col-xl-3">
             <ul class="nav flex-column">
@@ -146,11 +146,113 @@
                 </li>
             </ul>
         </aside>
+        <!-- Space left -->
+        <div class="col-xxl-1"></div>
 
         <!-- Center section -->
-        <section class="container-fluid col-xl-6 col-lg-9 col-xs-12">
-            <h1>teste section</h1>
+        <section class="container-fluid col-xxl-4 col-xl-6 col-lg-9 col-xs-12">
+            <div class="bg-white rounded-3 p-3">
+                <div class="d-flex align-items-center border-bottom pb-2">
+                    <i class="bi bi-person-circle fs-2 me-2"></i>
+                    <input class="form-control me-2 inputs" type="text" placeholder="No que você está pensando, Diego?">
+                </div>
+                <div class="d-flex justify-content-between pt-2 px-2">
+                    <div>
+                        <i class="bi bi-camera-video-fill"></i>
+                        <span>Vídeo ao vivo</span>
+                    </div>
+                    <div>
+                        <i class="bi bi-file-image-fill"></i>
+                        <span>Foto/vídeo</span>
+                    </div>
+                    <div>
+                        <i class="bi bi-emoji-smile-fill"></i>
+                        <span>Sentimento/atividade</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex gap-3 pt-3">
+                <div class="card-story d-flex flex-column">
+                    <div class="img-card">
+                        <img class="rounded-top-4" src="assets/img/user.png" alt="Adicionar story"/>
+                    </div>
+                    <div class="add-story bg-white rounded-bottom-4">
+                        <a href="#"><i class="bi bi-plus-circle-fill fs-1"></i></a>
+                        <span>Criar story</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="bg-white rounded-3 my-3">
+                    <div class="d-flex justify-content-between p-3">
+                        <div class="d-flex align-items-center">
+                            <div class="me-2">
+                                <img src="assets/img/logos/tntsports.jpg" width="30px" alt="Logo TNT Sports"/>
+                            </div>
+                            <div class="d-flex flex-column">
+                                <span class="sub-title-1">TNT Sports Brasil</span>
+                                <span class="sub-title-2 small">8 h</span>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-three-dots fs-5 me-1"></i>
+                            <i class="bi bi-x fs-5"></i>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <p>O sonho do cinturão fica pelo caminho, por enquanto. 🇧🇷 Diego Lopes perde por decisão unânime para Alexander Volkanovski, que volta a reinar como campeão do peso-pena do UFC. O brasileiro vai voltar mais forte! 💪 #UFC314</p>
+                    </div>
+                    <div>
+                        <img src="assets/img/posts/post1.jpg" width="100%" alt="Post 1">
+                    </div>
+                    <div class="d-flex justify-content-between px-3 pt-3 pb-2">
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <i class="bi bi-hand-thumbs-up-fill text-black-50"></i>
+                                <i class="bi bi-emoji-tear-fill text-black-50"></i>
+                                <i class="bi bi-heart-fill text-black-50"></i>
+                            </div>
+                            <span class="ms-2 text-black-50 ">2,5 mil</span>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <div>
+                                <span class="sub-title-3">516</span>
+                                <i class="bi bi-chat-fill text-black-50"></i>
+                            </div>
+                            <div class="ms-2">
+                                <span class="sub-title-3">168</span>
+                                <i class="bi bi-send-fill text-black-50"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3 pb-3">
+                        <div class="d-flex justify-content-between align-items-center pt-2 border-top">
+                            <div>
+                                <i class="bi bi-hand-thumbs-up"></i>
+                                <span class="sub-title-2">Curtir</span>
+                            </div>
+                            <div>
+                                <i class="bi bi-chat"></i>
+                                <span class="sub-title-2">Comentar</span>
+                            </div>
+                            <div>
+                                <i class="bi bi-whatsapp"></i>
+                                <span class="sub-title-2">Enviar</span>
+                            </div>
+                            <div>
+                                <i class="bi bi-send"></i>
+                                <span class="sub-title-2">Compartilhar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Space right -->
+        <div class="col-xxl-1"></div>
 
         <!-- Right aside -->
         <aside id="aside-right" class="d-none d-lg-block container-fluid col-xl-3 col-lg-3">
