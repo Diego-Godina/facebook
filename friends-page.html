@@ -10,20 +10,42 @@
 </head>
 
 <style>
-    .d-flex{
+    section {
+        flex-grow: 1;
     }
 
-    .lista-amigos{
-        background-color: blueviolet;
-        padding-left: 10px;
-        margin-right: 1000px;
-        font-size: 30px;
+    .lista-amigos {
+        padding: 10px;
+        width: 420px;
+        font-size: 20px;
     }
 
-    li {
-        margin: 15px 0;
+    tr, td {
+        padding: 20px;
+        margin: 20px 0;
     }
 
+    td:hover{
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0;
+        background-color: #e0e0e0;
+    }
+
+    .Recomended {
+         margin-top: 30px;
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        height: 200px;
+    }
+
+    .card-title, .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 </style>
 
 <body>
@@ -100,26 +122,205 @@
 <div class="d-flex">
     <!-- Left aside -->
     <aside class="d-none d-xl-block container-fluid lista-amigos">
-        <ul>
-            <li> <i class="bi bi-people-fill"></i> Home </li>
-            <li> <i class="bi bi-person-raised-hand"></i> Friend Requests </li>
-            <li> <i class="bi bi-person-fill-add"></i> Suggestions </li>
-            <li> <i class="bi bi-person-lines-fill"></i> All Friends </li>
-            <li> <i class="bi bi-gift"></i> Birthdays </li>
-            <li> <i class="bi bi-person-lines-fill"></i> Costum Lists </li>
-        </ul>
+        <table>
+            <tr>
+                <td> <i class="bi bi-people-fill"></i> Home </td>
+            </tr>
+            <tr>
+                <td><i class="bi bi-person-raised-hand"></i> Friend Requests</td>
+            </tr>
+            <tr>
+                <td> <i class="bi bi-person-fill-add"></i> Suggestions </td>
+            </tr>
+            <tr>
+                <td> <i class="bi bi-person-lines-fill"></i> All Friends </td>
+            </tr>
+            <tr>
+                <td> <i class="bi bi-gift"></i> Birthdays </td>
+            </tr>
+            <tr>
+                <td> <i class="bi bi-person-lines-fill"></i> Costum Lists </td>
+            </tr>
+
+        </table>
     </aside>
 
     <!-- Center section -->
-    <section class="container-fluid">
-        <div class="friend-requests">
-            <h1>Friend Requests</h1>
+    <section class="container-fluid px-5">
+        <div class="Recomended">
+            <h1 class="Friend-Request">Friend Requests</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4">
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/men/37.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Anthony Barnett</h5>
+                            <p class="card-text text-muted">9 amigos em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/women/30.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Terra Green</h5>
+                            <p class="card-text text-muted">7 amigos em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/women/16.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Mae Newman</h5>
+                            <p class="card-text text-muted">3 amigos em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+            </div>
         </div>
         <div class="Recomended">
-            <h1>People You may know</h1>
+            <h1 class="People-You-May-Know">People you may know</h1>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-4">
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Fernando Knight</h5>
+                            <p class="card-text text-muted">4 amigos em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/women/70.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Kirk Franklin</h5>
+                            <p class="card-text text-muted">1 amigo em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Gertrude Carroll</h5>
+                            <p class="card-text text-muted">1 amigo em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/men/83.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Ana Carolina</h5>
+                            <p class="card-text text-muted">1 amigo em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/women/84.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Alma Hughes</h5>
+                            <p class="card-text text-muted">1 amigo em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <!-- Exemplo de Card -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/men/18.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Billy Wade</h5>
+                            <p class="card-text text-muted">1 amigo em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/women/96.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Carole Carpenter</h5>
+                            <p class="card-text text-muted">1 amigo em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+                <div class="col">
+                    <div class="card h-100 text-center">
+                        <img src="https://randomuser.me/api/portraits/women/38.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Priscilla Russell</h5>
+                            <p class="card-text text-muted">1 amigo em comum</p>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-primary btn-sm">Add friend</button>
+                                <button class="btn btn-light btn-sm border">Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Final de exemplo -->
+            </div>
         </div>
     </section>
-
 </div>
 </body>
 </html>
